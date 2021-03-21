@@ -15,14 +15,18 @@ html {
   body {
     position: relative;
     background-color: @black;
-    margin: 0;
     padding: 0;
+    margin: 0;
     font-family: @text;
     font-size: 20px;
     font-weight: normal;
     line-height: 20px;
     color: @white;
     overflow-x: hidden;
+  }
+  
+  main {
+    background-image: url('../img/bg-noise.png');
   }
   
   input[type="number"]::-webkit-outer-spin-button,
@@ -50,4 +54,58 @@ html {
     clip: rect(0 0 0 0);
     overflow: hidden;
   }
+
+  .container {
+    margin: 0 20px;
+
+    @media screen and (min-width: @tablet) {
+      margin: 0 30px;
+    }
+
+    @media screen and (min-width: @tablet-xl) {
+      max-width: 960px;
+      margin: 0 auto;
+    }
+
+  }
+
+  .red {
+    color: @red;
+  }
+
+  *[class$="__title"] {
+    .title-mob;
+  }
   
+  *[class$="__text"] {
+    .text-mob;
+    text-align: center;
+  }
+
+  .divided {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: '';
+      display: block;
+      top: 30px;
+      left: 0;
+      width: 200px;
+      height: 0;
+      border-bottom: 1px solid #FFFFFF;
+      opacity: 0.5;
+    }
+
+    &::after {
+      position: absolute;
+      content: '';
+      display: block;
+      bottom: 30px;
+      right: 0;
+      width: 150px;
+      height: 0;
+      border-bottom: 1px solid #FFFFFF;
+      opacity: 0.5;
+    }
+  }

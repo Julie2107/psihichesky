@@ -7,6 +7,203 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
   </head>
   <body>
-    Я музыкант
+    <header class="main-header">
+      <button class="main-header__menu-button" type="button"><span class="visually-hidden">открыть меню</span></button>
+      <nav class="main-header__nav nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link" href="#">Обо мне</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Актёр озвучания</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Infinite <span class="red">worlds</span></a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">REGA<span class="red">TT</span>A</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Фото и <span class="red">видео</span></a>
+          </li>
+        </ul>
+        <ul class="nav__social-list social">
+          <li class="social__item">
+            <a class="social__link" href="">
+              <span class="visually-hidden">инстаграм</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="">
+              <span class="visually-hidden">фейсбук</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="">
+              <span class="visually-hidden">ютуб</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="">
+              <span class="visually-hidden">телеграм</span>
+            </a>
+          </li>
+        </ul>
+        <ul class="nav__music music">
+          <li class="music-item">
+            <a class="music-link" href="">
+              <span class="visually-hidden">спотифай</span>
+            </a>
+          </li>
+          <li class="music-item">
+            <a class="music-link" href="">
+              <span class="visually-hidden">айтюнс</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <img class="main-header__image" src="./img/header-back-mobile.jpg" alt="обо мне" width="320" height="350">
+      <div class="main-header__welcome container">
+        <h1 class="main-header__title">Алексей <span class="red">Психический</span></h1>
+        <p class="main-header__text">
+          Привет! Меня зовут Алексей Психический, и моя страница служит ответом на вопрос кто я и чем занимаюсь. Связаться со мной вы можете через любую из социальных сетей.
+        </p>
+        <a class="main-header__mail-button button button--mail" href="mailto:aeroflot04@mail.ru">написать</a>
+      </div>
+    </header>
+    <main>
+      <section class="about divided">
+        <div class="about__wrap container">
+          <img class="about__image" src="./img/about-mobile.jpg" alt="обо мне">
+          <h2 class="about__title">обо <span class="red">мне</span></h2>
+          <p class="about__text">
+            Я музыкант. Являюсь вокалистом рок-группы INFINITE WORLDS и проекта REGATTA. Также я работаю сессионно с различными музыкальными проектами. Значительное время я занимаюсь общественной деятельностью, а именно: провожу мастер-классы и курсы занятий по нескольким различным профилям, включая тренинг вокала...
+          </p>
+          <button class="about__button button" type="button">читать далее</button>
+        </div>
+      </section>
+      <section class="actor">
+        <div class="actor__wrap container">
+          <img class="actor__image" src="./img/actor-mobile.jpg" alt="актер озвучивания">
+          <h2 class="actor__title">актёр <span class="red">озвучивания</span> </h2>
+          <p class="actor__text">
+            Долгое время был автором и ведущим передачи «Rock-City» на прекрасной радиостанции Радио-Самара-Максимум, в которой рассказывал о самарских музыкантах и их лучших творениях. Сейчас я работаю в качестве актёра озвучки и занимаюсь производством аудиорекламы и аудиомонтажом, увлекаюсь созданием аудиокниг.
+            Мои работы вы можете послушать на сайте проекта ЛитРес и в моём блоге на Яндекс.Дзен.
+          </p>
+        </div>
+        <div class="actor__books">
+          <ul class="actor__books-list container">
+            <li class="actor__books-item">
+              <a class="actor__books-book" href=""><img src="./img/168277-pavel-bazhov-shirokoe-plecho 1.jpg"></a>
+            </li>
+            <li class="actor__books-item">
+              <a class="actor__books-book" href=""><img src="./img/kafka-mobile.jpg"></a>
+            </li>
+            <li class="actor__books-item">
+              <a class="actor__books-book" href=""><img src="./img/kafka-mobile.jpg"></a>
+            </li>
+            <li class="actor__books-item">
+              <a class="actor__books-book" href=""><img src="./img/aleks-savchenko-kibersayd-mobile 1.jpg"></a>
+            </li>
+            <li class="actor__books-item">
+              <a class="actor__books-book" href=""><img src="./img/168277-pavel-bazhov-shirokoe-plecho 1.jpg"></a>
+            </li>
+          </ul>
+          <button class="actor__button button" type="button">слушать на ЛитРес</button>
+        </div>
+      </section>
+      <section class="if container">
+        <img class="about__image" src="./img/if-mobile.jpg" alt="иф">
+        <h2 class="if__title">Infinite <span class="red">Worlds</span> </h2>
+        <p class="if__text">
+          Группа из Самары, исполняющая музыку в стиле Cinematic Rock, изначально существовавшая как студийный проект двух соавторов. На протяжении нескольких лет они создавали музыку и придумывали для каждой композиции историю, превращая свою музыку в саундтрек к истории о человечности в мире будущего. В процессе написания музыки ищут вдохновение в художественных произведениях жанра научной фантастики, а также в эстетике современного мира высоких технологий.
+        </p>
+        <linearGradient id="linear-gradient">
+          <stop offset="0%" stop-color="gold"/>
+          <stop offset="100%" stop-color="teal"/>
+        </linearGradient>
+        <ul class="if__button-list music">
+          <li class="music__item">
+            <a class="music__link" href="">
+              <span class="visually-hidden">спотифай</span>
+            </a>
+          </li>
+          <li class="music__item">
+            <a class="music__link" href="">
+              <span class="visually-hidden">айтюнс</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="regatta container">
+        <img class="about__image" src="./img/regatta-mobile.jpg" alt="иф">
+        <h2 class="regatta__title">REGA<span class="red">TT</span>A</h2>
+        <p class="regatta__text">
+          Во время абсолютной несвободы в России, мы много имеем сказать о тотальной лжи и сумасшествии, что нас окружают. Мы верим, что Рок-н-ролл как искусство, это сила, которая победит мракобесие и объединит людей под знамёнами светлого будущего.
+        </p>
+        <ul class="regatta__button-list music">
+          <li class="music__item">
+            <a class="music__link" href="">
+              <span class="visually-hidden">спотифай</span>
+            </a>
+          </li>
+          <li class="music__item">
+            <a class="music__link" href="">
+              <span class="visually-hidden">айтюнс</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section class="media">
+        <h2 class="media__title">фото и <span class="red">видео</span> </h2>
+        <ul class="media__list container">
+          <li class="media__item media__item--1">
+            <img src="./img/media-1-mobile.jpg" alt="">
+          </li>
+          <li class="media__item media__item--2">
+            <img src="./img/media-2-mobile.jpg" alt="">
+          </li>
+          <li class="media__item media__item--3">
+            <img src="./img/media-3-mobile.jpg" alt="">
+          </li>
+          <li class="media__item media__item--4">
+            <img src="./img/media-4-mobile.jpg" alt="">
+          </li>
+          <li class="media__item media__item--5">
+            <img src="./img/media-5-mobile.jpg" alt="">
+          </li>
+          <li class="media__item media__item--6">
+            <img src="./img/media-6-mobile.jpg" alt="">
+          </li>
+        </ul>
+        <a href="media__button button">you<span class="red">tube</span> канал</a>
+      </section>
+    </main>
+    <footer class="footer">
+      <ul class="footer__social-list social">
+        <li class="social__item">
+          <a class="social__link" href="">
+            <span class="visually-hidden">инстаграм</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="">
+            <span class="visually-hidden">фейсбук</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="">
+            <span class="visually-hidden">ютуб</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="">
+            <span class="visually-hidden">телеграм</span>
+          </a>
+        </li>
+      </ul>
+      <p class="footer__copyright">© 2021 psihichesky.ru. All rights reserved</p>
+    </footer>
   </body>
 </html>
