@@ -3,17 +3,23 @@
     text-align: center;
   }
   
-  .regatta__text {
-    position: relative;
-  
-    &::after {
-      position: absolute;
-      content: "";
-      display: block;
-      left: calc(50% - 75px);
-      bottom: -20px;
-      width: 150px;
-      height: 0;
-      border-bottom: 2px solid rgba(227, 227, 227, 0.5);
-    }
+.regatta__text {
+  position: relative;
+  margin-bottom: 50px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    display: block;
+    left: calc(50% - 75px);
+    bottom: -20px;
+    width: 150px;
+    height: 0;
+    border-bottom: 2px solid rgba(227, 227, 227, 0.5);
   }
+}
+
+.regatta__button-list.music {
+  justify-content: center;
+  padding: 0;
+}

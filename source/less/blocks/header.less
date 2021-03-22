@@ -1,5 +1,7 @@
 .main-header {
   position: relative;
+  display: flex;
+  flex-direction: column;
   background-color: @black;
   margin: 0;
   padding-bottom: 30px;
@@ -7,17 +9,44 @@
 
 .main-header__nav {
   position: absolute;
-  display: block;
+  display: none;
+  top: 75px;
+  left: 0;
   background-color: @black;
   border: 1px solid @white;
   border-top-right-radius: 16px;
   border-bottom-right-radius: 16px;
+  z-index: 2;
 }  
 
 .main-header__welcome {
   text-align: center;
 }
-/*
-.main-header__text {
-  text-align: center;
-}*/
+.main-header__menu-button {
+  position: relative;
+  width: 24px;
+  height: 27px;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin: 30px 0 0 20px;
+
+  & .icon-burger-opened {
+    display: none;
+  }
+
+  &.active {
+    .icon-burger-opened {
+      display: inline;
+    }
+
+    .icon-burger-closed {
+      display: none;
+    }
+
+    + .main-header__nav {
+      display: block;
+    }
+  }
+}
+
