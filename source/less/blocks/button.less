@@ -1,6 +1,6 @@
 .button {
   display: block;
-  margin: 0 auto;
+  //margin: 0 auto;
   padding: 10px 25px;
   background-color: transparent;
   border: 1px solid #FFFFFF;
@@ -8,9 +8,17 @@
   font-family: @text;
   text-transform: uppercase;
   text-decoration: none;
-  font-size: 12px;
+  font-size: 10px;
   line-height: 14px;
   color: @white;
+
+  &:active {
+    box-shadow: inset 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
+  }
+
+  &:hover {
+    background-color: @red;
+  }
 }
 
 .button--mail {
@@ -35,5 +43,21 @@
     right: 16px;
 
     background: url('../../img/icon-play.svg') no-repeat;
+  }
+}
+
+@media screen and (min-width: @mobile-xl) {
+  .button {
+    font-size: 12px;
+  }
+
+  .button--mail {
+    width: 163px;
+  }
+}
+
+@media screen and (min-width: @tablet-xl) {
+  .button {
+    font-size: 16px;
   }
 }

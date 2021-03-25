@@ -5,9 +5,7 @@ const menu = header.querySelector('.main-header__nav');
 button.addEventListener('click', function(evt) {
   evt.preventDefault();
 
-  if (!button.classList.contains('active')) {
-    button.classList.add('active');
-  }
+  !button.classList.contains('active') ? button.classList.add('active') :
+    button.classList.remove('active');
 
-  button.classList.remove('active');
 })

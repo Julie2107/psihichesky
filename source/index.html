@@ -42,120 +42,135 @@
 
     </svg>
     <header class="main-header">
-      <button class="main-header__menu-button active" type="button"><span class="visually-hidden">открыть меню</span>
-        <svg class="icon-burger-closed" width="24" height="27" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <use xlink:href="#icon-burger-closed"></use>
-        </svg>
-        <svg class="icon-burger-opened" width="24" height="27" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <use xlink:href="#icon-burger-opened"></use>
-        </svg>
-
-      </button>
-      <nav class="main-header__nav nav">
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a class="nav__link" href="#">Обо мне</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#">Актёр озвучания</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#">Infinite <span class="red">worlds</span></a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#">REGA<span class="red">TT</span>A</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#">Фото и <span class="red">видео</span></a>
-          </li>
-        </ul>
-        <ul class="nav__social-list social">
-          <li class="social__item">
-            <a class="social__link" href="">
-              <span class="visually-hidden">инстаграм</span>
-              <svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <use xlink:href="#icon-instagram"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link" href="">
-              <span class="visually-hidden">фейсбук</span>
-              <svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <use xlink:href="#icon-facebook"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link" href="">
-              <span class="visually-hidden">ютуб</span>
-              <svg width="20" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <use xlink:href="#icon-youtube"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link" href="">
-              <span class="visually-hidden">телеграм</span>
-              <svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <use xlink:href="#icon-telegram"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-        <ul class="nav__music music">
-          <li class="music__item">
-            <a class="music__link" href="">
-              <span class="visually-hidden">спотифай</span>
-              <svg width="40" height="40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <use xlink:href="#icon-spotify"></use>
-              </svg>
-
-            </a>
-          </li>
-          <li class="music__item">
-            <a class="music__link" href="">
-              <span class="visually-hidden">айтюнс</span>
-              <svg width="40" height="40" xmlns="http://www.w3.org/2000/svg">
-                <linearGradient id="paint0_linear" x1="8.74945" y1="5.39756" x2="31.5036" y2="34.9308" gradientUnits="userSpaceOnUse">
-                  <stop stop-color="#FF5E50"/>
-                  <stop offset="0.249" stop-color="#FE5C6C"/>
-                  <stop offset="0.3765" stop-color="#E3658A"/>
-                  <stop offset="0.497" stop-color="#B87EB0"/>
-                  <stop offset="0.6267" stop-color="#916CFF"/>
-                  <stop offset="0.7628" stop-color="#70BCFB" stop-opacity="0.917647"/>
-                  <stop offset="1" stop-color="#21C7FE"/>
-                </linearGradient>
-                <linearGradient id="paint1_linear" x1="8.68806" y1="5.44465" x2="31.4422" y2="34.978" gradientUnits="userSpaceOnUse">
-                  <stop stop-color="#FF5E50"/>
-                  <stop offset="0.249" stop-color="#FE5C6C"/>
-                  <stop offset="0.3765" stop-color="#E3658A"/>
-                  <stop offset="0.497" stop-color="#B87EB0"/>
-                  <stop offset="0.6267" stop-color="#916CFF"/>
-                  <stop offset="0.7628" stop-color="#70BCFB" stop-opacity="0.917647"/>
-                  <stop offset="1" stop-color="#21C7FE"/>
-                </linearGradient>
-          
-                <use xlink:href="#icon-itunes"></use>
-              </svg>
-
-            </a>
-          </li>
-        </ul>
-      </nav>
-      <img class="main-header__image" src="./img/header-back-mobile.jpg" alt="обо мне" width="320" height="350">
-      <div class="main-header__welcome container">
-        <h1 class="main-header__title">Алексей <span class="red">Психический</span></h1>
-        <p class="main-header__text">
-          Привет! Меня зовут Алексей Психический, и моя страница служит ответом на вопрос кто я и чем занимаюсь. Связаться со мной вы можете через любую из социальных сетей.
-        </p>
-        <a class="main-header__mail-button button button--mail" href="mailto:aeroflot04@mail.ru">написать</a>
+      <div class="main-header__navigation container">
+        <button class="main-header__menu-button" type="button"><span class="visually-hidden">открыть меню</span>
+          <svg class="icon-burger-closed" width="24" height="27" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="#icon-burger-closed"></use>
+          </svg>
+          <svg class="icon-burger-opened" width="24" height="27" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="#icon-burger-opened"></use>
+          </svg>
+        </button>
+        <nav class="main-header__nav nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="#">Обо мне</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Актёр озвучания</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Infinite <span class="red">worlds</span></a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">REGA<span class="red">TT</span>A</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Фото и <span class="red">видео</span></a>
+            </li>
+          </ul>
+          <ul class="nav__social-list social">
+            <li class="social__item">
+              <a class="social__link" href="">
+                <span class="visually-hidden">инстаграм</span>
+                <svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="">
+                <span class="visually-hidden">фейсбук</span>
+                <svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="">
+                <span class="visually-hidden">ютуб</span>
+                <svg width="20" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="#icon-youtube"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="">
+                <span class="visually-hidden">телеграм</span>
+                <svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="#icon-telegram"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <ul class="nav__music music">
+            <li class="music__item">
+              <a class="music__link" href="">
+                <span class="visually-hidden">спотифай</span>
+                <svg width="40" height="40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="#icon-spotify"></use>
+                </svg>
+  
+              </a>
+            </li>
+            <li class="music__item">
+              <a class="music__link" href="">
+                <span class="visually-hidden">айтюнс</span>
+                <svg width="40" height="40" xmlns="http://www.w3.org/2000/svg">
+                  <linearGradient id="paint0_linear" x1="8.74945" y1="5.39756" x2="31.5036" y2="34.9308" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#FF5E50"/>
+                    <stop offset="0.249" stop-color="#FE5C6C"/>
+                    <stop offset="0.3765" stop-color="#E3658A"/>
+                    <stop offset="0.497" stop-color="#B87EB0"/>
+                    <stop offset="0.6267" stop-color="#916CFF"/>
+                    <stop offset="0.7628" stop-color="#70BCFB" stop-opacity="0.917647"/>
+                    <stop offset="1" stop-color="#21C7FE"/>
+                  </linearGradient>
+                  <linearGradient id="paint1_linear" x1="8.68806" y1="5.44465" x2="31.4422" y2="34.978" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#FF5E50"/>
+                    <stop offset="0.249" stop-color="#FE5C6C"/>
+                    <stop offset="0.3765" stop-color="#E3658A"/>
+                    <stop offset="0.497" stop-color="#B87EB0"/>
+                    <stop offset="0.6267" stop-color="#916CFF"/>
+                    <stop offset="0.7628" stop-color="#70BCFB" stop-opacity="0.917647"/>
+                    <stop offset="1" stop-color="#21C7FE"/>
+                  </linearGradient>
+            
+                  <use xlink:href="#icon-itunes"></use>
+                </svg>
+  
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="main-header__content">
+        <picture>
+          <source media="(min-width: 1680px)" srcset="/img/header-back-desktop.png">
+          <source media="(min-width: 1000px)" srcset="/img/header-back-tablet1000.png">
+          <source media="(min-width: 768px)" srcset="/img/header-back-tablet.png">
+          <source media="(min-width: 420px)" srcset="/img/header-back-mobile420.jpg">
+          <img class="main-header__image" src="./img/header-back-mobile.jpg" alt="обо мне">
+        </picture>
+        <div class="main-header__welcome">
+          <h1 class="main-header__title"><span>Алексей</span> <span class="red">Психический</span></h1>
+          <p class="main-header__text">
+            Привет! Меня зовут Алексей Психический, и моя страница служит ответом на вопрос кто я и чем занимаюсь. Связаться со мной вы можете через любую из социальных сетей.
+          </p>
+          <a class="main-header__mail-button button button--mail" href="mailto:aeroflot04@mail.ru">написать</a>
+        </div>
       </div>
     </header>
     <main>
       <section class="about divided">
         <div class="about__wrap container">
-          <img class="about__image" src="./img/about-mobile.jpg" alt="обо мне">
+          <picture>
+            <source media="(min-width: 1480px)" srcset="/img/about-desktop.png">
+            <source media="(min-width: 1000px)" srcset="/img/about-tablet1000.png">
+            <source media="(min-width: 768px)" srcset="/img/about-tablet.png">
+            <source media="(min-width: 420px)" srcset="/img/about-mobile420.jpg">
+            <img class="about__image" src="./img/about-mobile.jpg" alt="обо мне">
+          </picture>
           <h2 class="about__title">обо <span class="red">мне</span></h2>
           <p class="about__text">
             Я музыкант. Являюсь вокалистом рок-группы INFINITE WORLDS и проекта REGATTA. Также я работаю сессионно с различными музыкальными проектами. Значительное время я занимаюсь общественной деятельностью, а именно: провожу мастер-классы и курсы занятий по нескольким различным профилям, включая тренинг вокала...
@@ -165,7 +180,13 @@
       </section>
       <section class="actor">
         <div class="actor__wrap container">
-          <img class="actor__image" src="./img/actor-mobile.jpg" alt="актер озвучивания">
+          <picture>
+            <source media="(min-width: 1480px)" srcset="/img/about-desktop.png">
+            <source media="(min-width: 1000px)" srcset="/img/about-tablet1000.png">
+            <source media="(min-width: 768px)" srcset="/img/about-tablet.png">
+            <source media="(min-width: 420px)" srcset="/img/actor-mobile420.jpg">  
+            <img class="actor__image" src="./img/actor-mobile.jpg" alt="актер озвучивания">
+          </picture>
           <h2 class="actor__title">актёр <span class="red">озвучивания</span> </h2>
           <p class="actor__text">
             Долгое время был автором и ведущим передачи «Rock-City» на прекрасной радиостанции Радио-Самара-Максимум, в которой рассказывал о самарских музыкантах и их лучших творениях. Сейчас я работаю в качестве актёра озвучки и занимаюсь производством аудиорекламы и аудиомонтажом, увлекаюсь созданием аудиокниг.
@@ -175,7 +196,9 @@
         <div class="actor__books">
           <ul class="actor__books-list container">
             <li class="actor__books-item">
-              <a class="actor__books-book" href=""><img src="./img/168277-pavel-bazhov-shirokoe-plecho 1.jpg"></a>
+              <a class="actor__books-book" href="">
+                <img src="./img/168277-pavel-bazhov-shirokoe-plecho 1.jpg">
+              </a>
             </li>
             <li class="actor__books-item">
               <a class="actor__books-book" href=""><img src="./img/kafka-mobile.jpg"></a>
