@@ -8,3 +8,72 @@
 .about__text {
   margin-bottom: 30px;
 }
+
+.about__button {
+  margin: 0 auto;
+}
+
+@media screen and (min-width: @mobile-xl) {
+  .about__wrap {
+    display: flex;
+    justify-content: center;
+  }
+  .about__image {
+    width: 176px;
+    height: 352px;
+    flex-grow: 1;
+  }
+
+  .about__content {
+    width: 60%;
+  }
+
+  .about__title {
+    margin: 0;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: @tablet) {
+  .about__image {
+    float: left;
+    height: 352px;
+    width: 321px;
+  }
+
+  .about__content {
+    width: 50%;
+  }
+
+
+  .about__text {
+    text-align: left;
+  }
+
+  .about__button {
+    margin-left: 0;
+  }
+}
+
+@media screen and (min-width: @tablet-xl) {
+  .about__image {
+    float: left;
+    height: 412px;
+    width: 308px;
+  }
+
+}
+
+@media screen and (min-width: @desktop) {
+  .about {
+    padding: 170px 0;
+  }
+  .about__image {
+    width: 622px;
+    height: 640px;
+  }
+
+  .about__content {
+    width: 705px;
+  }
+}

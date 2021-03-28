@@ -71,7 +71,10 @@
       transition: all 1s ease;
     }
   }
+}
 
+.main-header__mail-button {
+  margin: 0 auto;
 }
 
 @media (min-width: 480px) {
@@ -109,6 +112,12 @@
     border: none;
     width: auto;
     height: auto;
+
+    & .nav__list {
+      opacity: 0;
+      
+     // transition: opacity 1s ease;
+    }
   }
 
   .main-header__menu-button {
@@ -133,8 +142,11 @@
   
       + .main-header__nav {
         display: flex;
+        
         & .nav__list  {
           display: flex;
+          opacity: 1;
+          transition: opacity 2s ease;
         }            
       }
     }
@@ -181,6 +193,11 @@
   .main-header__text {
     margin-bottom: 40px;
   }
+
+  .main-header__mail-button {
+    margin: 0;
+  }
+  
 }
 
 @media screen and (min-width: @tablet-xl) {
