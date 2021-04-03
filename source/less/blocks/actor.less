@@ -11,25 +11,16 @@
   margin-bottom: 0;
 }
 
-.actor__books {
-  background-color: @dark;
-  width: 100%;
-  padding: 30px 20px;
-}
 
-.actor__books-list {
-  list-style: none;
+.actor__buttons {
   display: flex;
-  justify-content: space-between;
-  margin: 0;
-  margin-bottom: 30px;
-  padding: 20px 0;
-  border-top: 1px solid rgba(227, 227, 227, 0.5);
-  border-bottom: 1px solid rgba(227, 227, 227, 0.5);
+  flex-direction: column;
+  padding: 20px
+  //margin: 0 auto;
 }
 
-.actor__button {
-  margin: 0 auto;
+.actor__button:first-child {
+  margin-bottom: 20px;
 }
 
 @media screen and (min-width: @mobile-xl) {
@@ -55,6 +46,15 @@
   .actor__text {
     width: 100%;
   }
+
+  .actor__buttons {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .actor__button:first-child {
+    margin: 0;
+  }
 }
 
 @media screen and (min-width: @tablet) {
@@ -66,6 +66,7 @@
   .actor__image {
     width: 370px;
     height: 416px;
+    margin-left: 20px;
   }
 
   .actor__content {
@@ -74,6 +75,18 @@
   .actor__title {
     margin-top: 0;
   }
+
+  .actor__buttons {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px 0;
+    align-items: baseline;
+  }
+
+  .actor__button {
+    margin-top: 10px;
+  }
+
 }
 
 @media screen and (min-width: @desktop) {

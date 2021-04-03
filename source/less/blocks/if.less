@@ -3,25 +3,27 @@
   text-align: center;
 }
 
-.if__text {
+.if__button-list.music {
   position: relative;
-  margin-bottom: 50px;
+  justify-content: center;
+  padding: 0;
+  margin-top: 40px;
 
-  &::after {
+  & .music__item:last-child {
+    margin-right: 0;
+  }
+
+  &::before {
     position: absolute;
     content: "";
     display: block;
     left: calc(50% - 75px);
-    bottom: -20px;
+    top: -20px;
     width: 150px;
     height: 0;
     border-bottom: 2px solid rgba(227, 227, 227, 0.5);
   }
-}
 
-.if__button-list.music {
-  justify-content: center;
-  padding: 0;
 }
 
 @media screen and (min-width: @mobile-xl) {
@@ -70,15 +72,13 @@
     margin-top: 0;
   }
 
-  .if__text {
-    &::after {
+  .if__button-list.music {
+    justify-content: flex-start;
+
+    &::before {
       width: 100%;
       left: 0;
     }
-  }
-
-  .if__button-list.music {
-    justify-content: flex-start;
   }
 }
 
