@@ -15,13 +15,24 @@
   padding-top: 0;
   height: 0;
   overflow: hidden;
-
+  
   iframe {
+    max-width: 560px;
+    max-height: 315px;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+
+    @media (min-width: @tablet) {
+      left: 20px;
+    }
+
+    @media (min-width: @desktop) {
+      left: 58px;
+    }
+
   }
 }
 

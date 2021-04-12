@@ -7,5 +7,11 @@ button.addEventListener('click', function(evt) {
 
   !button.classList.contains('active') ? button.classList.add('active') :
     button.classList.remove('active');
+});
 
+menu.addEventListener('click', function(evt) {
+  if (evt.target.classList.contains('nav__link')){
+    !button.classList.contains('active') ? button.classList.add('active') :
+      button.classList.remove('active');
+  }
 })
