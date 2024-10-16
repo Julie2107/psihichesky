@@ -1,8 +1,8 @@
 .regatta {
-    padding: 30px 0 0;
-    text-align: center;
-  }
-  
+  padding: 30px 0 0;
+  text-align: center;
+}
+
 .regatta__text {
   position: relative;
 }
@@ -15,7 +15,7 @@
 
   &::before {
     position: absolute;
-    content: "";
+    content: '';
     display: block;
     left: calc(50% - 75px);
     top: -20px;
@@ -39,7 +39,6 @@
     padding: 50px 0;
   }
 
-
   .regatta__title {
     text-align: left;
     margin: 0;
@@ -54,11 +53,11 @@
 
 @media screen and (min-width: @tablet) {
   .regatta {
-    flex-direction: row-reverse;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: flex-start;
     padding-bottom: 100px;
+    align-items: flex-start;
   }
 
   .regatta__content {
@@ -68,7 +67,7 @@
   .regatta__image {
     width: 350px;
     height: 350px;
-    margin-left: 30px;
+    margin-right: 30px;
   }
 
   .regatta__title {
@@ -84,18 +83,16 @@
       width: 100%;
       left: 0;
     }
-
   }
 }
 
 @media screen and (min-width: @desktop) {
   .regatta__image {
-    width: 500px;
-    height: 460px;
+    width: 620px;
+    height: 560px;
   }
 
   .regatta__title {
     margin-bottom: 50px;
-    
   }
 }
